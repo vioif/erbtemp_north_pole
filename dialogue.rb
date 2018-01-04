@@ -4,7 +4,7 @@ price = 8.75
 
 line_1 = "Bill:   That will cost you <%= price %> plus taxes, ma'am."
 line_2 = "Pritma: How much is it with taxes?"
-line_3 = "Bill:   I don't know! I'm not very good at math."
+line_3 = "Bill:   That will be $<%= (price * 1.13).round(2) %> ma'am. "
 
 puts
 puts ERB.new(line_1).result
